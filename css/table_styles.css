@@ -1,0 +1,60 @@
+/* float the #left div left and allow the
+   multiplication table to fill in the space
+   to the right */
+#left {
+  width: 100%;
+}
+
+#left h3 {
+  color: #fff; /* make the header white */
+}
+
+#right {
+  color: #fff; /* default font color in table's div to white */
+}
+
+table {
+  margin: auto;
+  font-size: 1.2em;
+}
+
+form h4 {
+  color: #fff;
+}
+
+form label {
+  display: block;
+  color: #fff;
+  text-align: center;
+  width: 150px;
+}
+
+input[type=submit] {
+  margin-top: 15px; /* make submit button sit below the input fields */
+  width: 150px; /* make width of input fields the same as the label size */
+}
+
+t
+
+/* make first number in every row
+   and the header row bold */
+tr td:first-child, tbody tr:first-child {
+  font-weight: bold;
+}
+
+/* the multiplier column */
+tr td:first-child {
+  padding-right: 10px;
+  color: blue;
+}
+
+/* the multiplicand row */
+tbody tr:first-child {
+  color: green;
+}
+
+/* center columnwise each entry in the table */
+td {
+  text-align: center;
+  padding: 5px;
+}

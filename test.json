@@ -1,0 +1,13 @@
+{
+    "date_recorded": {
+        "day": 1,
+        "month": 1,
+        "year": 1
+    },
+    "artist": "Test Artist",
+    "title": "Song Title",
+    "lyrics": {
+        "verse1": "This sure is a great verse!",
+        "chorus": "This is also a great chorus!"
+    }
+}

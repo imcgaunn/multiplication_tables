@@ -1,0 +1,69 @@
+// put everything in a self-executing function to
+// avoid polluting the global namespace. 
+(function () {
+
+    // handler called when status of AJAX request changes
+    function ajax_handler() {
+        if (req.readyState  == 4 /* complete */) {
+            /* GET returns OK from server */
+            if (req.status == 200) {
+                renderLyrics(JSON.parse(req.responseText));
+                //console.log("did we make it?") /* debugging print */
+            }
+        }
+    }
+
+
+    // takes a JSON object 'song' which contains the
+    // artist, recording date, title and lyrics of a song
+    // and adds elements to the DOM to represent them. 
+    function renderLyrics(song) {
+        var content = "";
+        //console.log(song); /* debug print statement */
+       
+        // use jquery DOM manipulation function to place title and artist.
+        // into the article with class post
+
+        $("article.post").prepend("<h2 class='artist'>by " + song.artist + "</h2>");
+        $("article.post").prepend("<h1 class='title'>" + song.title + "</h1>");
+
+        // create regex literals to match object property names
+        // starting with 'verse' and starting with 'chorus'
+        var verse_pattern   = /^verse.*/;
+        var chorus_pattern  = /^chorus.*/;
+
+        // loop over every property of the song.lyrics object
+        for(var elem in song.lyrics) {
+            if (elem.match(verse_pattern)) {
+                // append to the #left div
+                $("#left").append("<h3 class='verse'> Verse </h2>");
+                $("#left").append("<p class='lyrics'>" + song.lyrics[elem] + "</p>");
+            }
+            else if (elem.match(chorus_pattern)) {
+                // append to the #right div
+                $("#right").append("<h3 class='chorus'> Chorus </h3>");
+                $("#right").append("<p class='lyrics'>" + song.lyrics[elem] + "</p>");
+
+            }
+
+        }
+
+        console.log("is this working?"); /* debug print statement */
+        
+    }
+
+    // AJAX code adapted from http://msdn.microsoft.com/en-us/library/windows/apps/hh453379.aspx
+    // makes a GET request for a JSON serialized object containing song lyrics and
+    // some song metadata. 
+    var req = new XMLHttpRequest();
+    if (req != null) {
+        req.open("GET", "i_write_sins_not_tragedies.json", true);
+        req.onreadystatechange = ajax_handler;
+        req.send();
+    }
+    else {
+        console.log("AJAX Not Supported");
+    }
+
+
+}());
