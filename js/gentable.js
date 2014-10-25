@@ -1,15 +1,20 @@
-//TODO HEADER COMMENT
+//File: multiplication_tables/gentable.js
+//91.461 Assignment: Multiplication Tables
+//Ian McGaunn, UMass Lowell Computer Science, imcgaunn@cs.uml.edu
+//Copyright (c) 2014 by Ian McGaunn.  All rights reserved.  May be freely
+//copied or excerpted for educational purposes with credit to the author
 
 // start executing code once the DOM is ready
 $(document).ready(function() {
   // when the submit event occurs, call this function
   $("#ranges").submit(function() {
 
-    var multiplier_start   = $("#multiplierStart").val();
-    var multiplier_end     = $("#multiplierEnd").val();
-    var multiplicand_start = $("#multiplicandStart").val();
-    var multiplicand_end   = $("#multiplicandEnd").val();
+    var multiplier_start   = parseInt($("#multiplierStart").val());
+    var multiplier_end     = parseInt($("#multiplierEnd").val());
+    var multiplicand_start = parseInt($("#multiplicandStart").val());
+    var multiplicand_end   = parseInt($("#multiplicandEnd").val());
 
+    // some debugging statements
     console.log("ier start " + multiplier_start);
     console.log("ier end " + multiplier_end);
     console.log("and start " + multiplicand_start);
@@ -18,7 +23,6 @@ $(document).ready(function() {
     // select and clear any table that might already be on page.
     var table = $("#tbl1 tbody");
     table.empty();
-
 
     // create a top row
     table.append($("<tr id='first'>"));

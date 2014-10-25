@@ -1,3 +1,11 @@
+/*
+File: /~imcgaunn/public_html/css/table_styles.css
+Ian D. McGaunn, UMass Lowell Computer Science, ian_mcgaunn@student.uml.edu
+Copyright (c) 2014 by Ian D. McGaunn. All rights reserved. May be freely
+copied or excerpted for educational purposes with credit to the author.
+updated by IDM on October 22, at 6:21PM
+*/
+
 /* float the #left div left and allow the
    multiplication table to fill in the space
    to the right */
@@ -5,6 +13,7 @@
   width: 100%;
 }
 
+/* styles for h3 headings in the left column
 #left h3 {
   color: #fff; /* make the header white */
 }
@@ -13,15 +22,18 @@
   color: #fff; /* default font color in table's div to white */
 }
 
+/* center text in cells and make the font legible for tables */
 table {
   margin: auto;
   font-size: 1.2em;
 }
 
+/* make h4 headers in form white */
 form h4 {
   color: #fff;
 }
 
+/* make it so that form labels stack instead of squeezing next to one another */
 form label {
   display: block;
   color: #fff;
