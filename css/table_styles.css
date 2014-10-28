@@ -10,63 +10,62 @@ updated by IDM on October 22, at 6:21PM
    multiplication table to fill in the space
    to the right */
 #left {
-  width: 100%;
+    width: 100%;
 }
 
 /* styles for h3 headings in the left column */
 #left h3 {
-  color: #fff; /* make the header white */
+    color: #fff; /* make the header white */
 }
 
 #right {
-  color: #fff; /* default font color in table's div to white */
+    color: #fff; /* default font color in table's div to white */
 }
 
 /* center text in cells and make the font legible for tables */
 table {
-  margin: auto;
-  font-size: 1.2em;
+    margin: auto;
+    font-size: 1.2em;
 }
 
 /* make h4 headers in form white */
 form h4 {
-  color: #fff;
+    color: #fff;
 }
 
 /* make it so that form labels stack instead of squeezing next to one another */
 form label {
-  display: block;
-  color: #fff;
-  text-align: center;
-  width: 150px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 150px;
 }
 
 input[type=submit] {
-  margin-top: 15px; /* make submit button sit below the input fields */
-  width: 150px; /* make width of input fields the same as the label size */
+    margin-top: 15px; /* make submit button sit below the input fields */
+    width: 150px; /* make width of input fields the same as the label size */
 }
 
-t
 
 /* make first number in every row
    and the header row bold */
 tr td:first-child, tbody tr:first-child {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* the multiplier column */
 tr td:first-child {
-  padding-right: 10px;
-  color: blue;
+    padding-right: 10px;
+    color: blue;
 }
 
 /* the multiplicand row */
 tbody tr:first-child {
-  color: green;
+    color: green;
 }
 
 /* center columnwise each entry in the table */
 td {
-  text-align: center;
-  padding: 5px;
+    text-align: center;
+    padding: 5px;
 }

@@ -10,21 +10,21 @@ updated by IDM on October 22, at 6:21PM
 /* create a dark background, default
 the font to something sans-serif */
 body {
-  background: #222;
-  font-family: Helvetica, sans-serif;
+    background: #222;
+    font-family: Helvetica, sans-serif;
 }
 
 /* create a nice looking dividing line */
 hr {
-  margin:20px 0;
-  padding:0;
-  border:0;
-  border-top:1px solid #333;
-  border-bottom:1px solid #000;
-  height:2px;
-  width:100%;
-  text-align:left;
-  display:block;
+    margin:20px 0;
+    padding:0;
+    border:0;
+    border-top:1px solid #333;
+    border-bottom:1px solid #000;
+    height:2px;
+    width:100%;
+    text-align:left;
+    display:block;
 }
 
 /* styles for the header.
@@ -32,61 +32,61 @@ make the header the same width as the body,
 and center it on the page. Make sure its visible content
 is adequately spaced from the top of the webpage. */
 header {
-  width: 750px;
-  margin: auto;
-  padding-top: 15px;
+    width: 750px;
+    margin: auto;
+    padding-top: 15px;
 }
 
 /* assign a width to posts and center them on the page.
 NOTE: this centers the actual container, not the
 text within. */
 .post {
-  margin: auto;
-  width: 750px;
+    margin: auto;
+    width: 750px;
 }
 /* remove margins on button links
 the 'btn' class is part of amazium */
 a.btn {
-  margin: 0px;
+    margin: 0px;
 }
 
 
 /* make links look blue */
 a {
-  color: #3498DB;
+    color: #3498DB;
 }
 
 /* assign a readable color and size to article text */
 article p {
-  color: #BBB;
-  font-size: 18px;
+    color: #BBB;
+    font-size: 18px;
 }
 
 /* center titles inside articles, make them white*/
 article h1 {
-  color: #FFF;
-  font-size: 35px;
-  text-align: center;
+    color: #FFF;
+    font-size: 35px;
+    text-align: center;
 }
 
 /* make the h2 titles light grey */
 article h2 {
-  text-align: center;
-  font-size: 32px;
-  color: #e3e3e3;
+    text-align: center;
+    font-size: 32px;
+    color: #e3e3e3;
 }
 
 /* change the background color of footers
 and add some extra space */
 footer {
-  background: #111;
-  margin: auto;
-  width: 750px;
-  padding: 10px;
+    background: #111;
+    margin: auto;
+    width: 750px;
+    padding: 10px;
 }
 
 /* make the text below the validation icons
 smaller */
 #validation {
-  font-size: 13px;
+    font-size: 13px;
 }

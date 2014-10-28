@@ -1,68 +1,68 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <!--
-  File: multiplication_tables/index.html
-  91.461 Assignment: Multiplication Tables
-  Ian McGaunn, UMass Lowell Computer Science, imcgaunn@cs.uml.edu
-  Copyright (c) 2014 by Ian McGaunn.  All rights reserved.  May be freely
-  copied or excerpted for educational purposes with credit to the author.
-  -->
-<title>Ian McGaunn - GUI Programming I</title>
+  <head>
+    <meta charset="utf-8" />
+    <!--
+        File: multiplication_tables/index.html
+        91.461 Assignment: Multiplication Tables
+        Ian McGaunn, UMass Lowell Computer Science, imcgaunn@cs.uml.edu
+        Copyright (c) 2014 by Ian McGaunn.  All rights reserved.  May be freely
+        copied or excerpted for educational purposes with credit to the author.
+      -->
+    <title>Ian McGaunn - GUI Programming I</title>
 
-<!--
-using normalize.css, a smart CSS reset written by
-Nicolas Gallagher and Jonathan Neal
--->
-<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
+    <!--
+        using normalize.css, a smart CSS reset written by
+        Nicolas Gallagher and Jonathan Neal
+      -->
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
 
-<!-- Custom styles -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/table_styles.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table_styles.css">
 
-<!-- Newest version of Jquery from google CDN. -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="js/gentable.js"></script>
+    <!-- Newest version of Jquery from google CDN. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/gentable.js"></script>
 
-<!-- Favicon, currently this is just the default amazium favicon -->
-<link rel="shortcut icon" href="images/favicon.ico">
-</head>
+    <!-- Favicon, currently this is just the default amazium favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
 
-<body>
-  <article class="post">
-    <h2>Multiplication Table</h2>
-    <!-- DYNAMIC CONTENT -->
-    <div id="left">
-      <!-- begin form -->
-      <h3>Table Options</h3>
-      <form id="ranges" action="javascript:void(0)">
-        <h4 style="color: blue">Multiplier (start, end)</h4>
-        <input type="number" id="multiplierStart" name="multiplierStart" size="5" value="1"</input>
-        <input type="number" id="multiplierEnd" name="multiplierEnd" size="5" value="2"></input>
-        <br />
+  <body>
+    <article class="post">
+      <h2>Multiplication Table</h2>
+      <!-- DYNAMIC CONTENT -->
+      <div id="left">
+        <!-- begin form -->
+        <h3>Table Options</h3>
+        <form id="ranges" action="javascript:void(0)">
+          <h4 style="color: blue">Multiplier (start, end)</h4>
+          <input type="number" id="multiplierStart" name="multiplierStart" size="5" value="1"</input>
+          <input type="number" id="multiplierEnd" name="multiplierEnd" size="5" value="2"></input>
+          <br />
 
-        <h4 style="color: green">Multiplicand (start, end)</h4>
-        <input type="number" id="multiplicandStart" name="multiplicandStart" size="5" value="1"</input>
-        <input type="number" id="multiplicandEnd" name="multiplicandEnd" size="5" value="2"</input>
-        <br />
-        <input type="submit" value="Create Table"</input>
-      </form> <!-- end form -->
-    </div>
+          <h4 style="color: green">Multiplicand (start, end)</h4>
+          <input type="number" id="multiplicandStart" name="multiplicandStart" size="5" value="1"</input>
+          <input type="number" id="multiplicandEnd" name="multiplicandEnd" size="5" value="2"</input>
+          <br />
+          <input type="submit" value="Create Table"</input>
+        </form> <!-- end form -->
+      </div>
 
-    <div id="right">
-      <h3>The Table</h3>
-      <!-- begin table -->
-      <table id="tbl1" cellpadding="5" cellspacing="0">
-        <tbody>
+      <div id="right">
+        <h3>The Table</h3>
+        <!-- begin table -->
+        <table id="tbl1" cellpadding="5" cellspacing="0">
+          <tbody>
 
-        </tbody>
-      </table> <!-- end table -->
-    </div>
-    <hr />
-  </article>
+          </tbody>
+        </table> <!-- end table -->
+      </div>
+      <hr />
+    </article>
 
-  <!-- placed script in bottom to improve load times -->
-  <script src="js/gentable.js"></script>
-</body>
+    <!-- placed script in bottom to improve load times -->
+    <script src="js/gentable.js"></script>
+  </body>
 </html>
